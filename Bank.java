@@ -45,8 +45,8 @@ t=sc.nextInt();
 }
 void interestCall()
 {
- interest= bal*(Math.pow(1.05,t));      // 1+r*0.01 and r=5
-bal=bal+interest;
+ interest= bal*(Math.pow(1+(r*0.01),t));      // 1+r*0.01 and r=5
+  bal=bal+interest;
 }
 void display()
 {
@@ -82,11 +82,11 @@ int ch=sc.nextInt();
 Account ref;
 if(ch=1)
 {
- ref=new Sav_acc;
+ ref=new Sav_acc();
 }
 else
 {
-ref=new Curr_acc;
+ref=new Curr_acc();
 }
 ref.input();
 ref.deposit();
