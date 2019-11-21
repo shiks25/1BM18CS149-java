@@ -1,16 +1,16 @@
 import java.util.*;
-class Account
+abstract class Account
 {
   String cust_name,acc_type;
   long  acc_no;
   double bal=0.0;
+  Scanner sc =new Scanner(System.in);
  void input()
 {
-  System.out.println("Enter the cst name,acc type and acc no.");
-Scanner sc =new Scanner(System.in);
-cust_name=sc.next();
-acc_type=sc.next();
-acc_no = sc.nextInt();
+   System.out.println("Enter the cst name,acc type and acc no.");
+   cust_name=sc.next();
+   acc_type=sc.next();
+   acc_no = sc.nextInt();
 }
 void display()
 {
@@ -28,8 +28,10 @@ System.out.println("enter the amount to be withdrawn");
 double draw=sc.nextDouble();
 bal-=draw;
 }
-abstract void interestCal();
-abstract void service();
+ void interestCal() {
+  }
+ void service(){
+  }
 }
 class sav_acct extends Account
 {
@@ -80,13 +82,13 @@ class Bank
 System.out.println("Enter 1 for savings 2. for current account");
 int ch=sc.nextInt();
 Account ref;
-if(ch=1)
+if(ch==1)
 {
- ref=new Sav_acc();
+ ref=new sav_acc();
 }
 else
 {
-ref=new Curr_acc();
+ref=new curr_acc();
 }
 ref.input();
 ref.deposit();
