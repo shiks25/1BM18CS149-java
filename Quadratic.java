@@ -14,7 +14,7 @@ class Quadratic
  {
   System.out.println("The real and equal roots are"+(-b/(2*a)));
 }
-   if(d>0)
+   else if(d>0)
    {
      r1=(double)(-b+Math.sqrt(d))/(2*a);
      r2=(double)(-b-Math.sqrt(d))/(2*a);
