@@ -4,7 +4,7 @@ import java.util.*;
  public class Externals extends Student{
  public int marks_see[]=new int[5];
  public void get_see(){
-System.out.println("Enter the marks of the student in course ");
+System.out.println("Enter the marks of the student in each course in SEE ");
  for(int i=0;i<5;i++){
  
  Scanner s= new Scanner(System.in);
