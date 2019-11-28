@@ -47,7 +47,7 @@ t=sc.nextInt();
 }
 void interestCall()
 {
- interest= bal*(Math.pow(1+(r*0.01),t));      // 1+r*0.01 and r=5
+ interest= bal*(Math.pow(1+(r*0.01),t));
   bal=bal+interest;
 }
 void display()
