@@ -26,7 +26,7 @@ import java.util.*;
    b.display_see();
    	for(int j=0;j<5;j++){
  	System.out.println("final marks of course"+(j+1));
- 	System.out.println(a.marks_cie[j]+b.marks_see[j]);
+ 	System.out.println(a[i].marks_cie[j]+b[i].marks_see[j]);
         }
    }
  
