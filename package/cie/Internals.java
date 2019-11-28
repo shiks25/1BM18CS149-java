@@ -5,7 +5,7 @@ import java.util.*;
  public int marks_cie[]=new int[5];
  public void get_cie()
 {
- System.out.println("Enter the marks of the student in course ");
+ System.out.println("Enter the marks of the student in each course in cie ");
  for(int i=0;i<5;i++){
  
  Scanner s= new Scanner(System.in);
