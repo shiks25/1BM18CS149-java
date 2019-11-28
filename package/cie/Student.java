@@ -7,7 +7,7 @@ public class Student
   public  int sem;
   public void get_details(){
   Scanner s= new Scanner(System.in);
-  System.out.println("Enter the details");
+  System.out.println("Enter the student name,usn,sem");
   usn=s.next();
   name=s.next();
   sem=s.nextInt();
