@@ -13,6 +13,6 @@ public class Student
   sem=s.nextInt();
   }
 public void display_details(){
- System.out.println("usn="+usn+"name="+name+"sem="+sem);
+ System.out.println("usn= "+usn+" name= "+name+" sem= "+sem);
 }
 }
