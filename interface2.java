@@ -13,7 +13,7 @@ double speed;
 System.out.println("enter the current speed of the vehicle");
 Scanner s=new Scanner(System.in);
 speed=s.nextDouble();
-if(speed>safe_speed)
+if(speed>=safe_speed)
 {
 System.out.println("drive slow you drunkard!");
 }
